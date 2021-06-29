@@ -10,3 +10,12 @@
 # 1234
 
 # TODO: your code here
+
+x = 1
+y = 1
+number = int(input("введите число "))
+
+while x <= number:
+    print(y)
+    x += 1
+    y = y*10 + x
