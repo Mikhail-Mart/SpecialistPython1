@@ -8,3 +8,10 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+col = int(input("введите число коров: "))
+if col >= 5:
+    print(col, "коров")
+elif col == 2 or col == 3 or col == 4:
+    print(col, "коровы")
+else:
+    print(col, "корова")
