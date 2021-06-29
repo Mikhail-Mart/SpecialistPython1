@@ -3,3 +3,13 @@
 # Формат выходных данных: Выведите «YES», если треугольник равнобедренный, и «NO» в противном случае.
 
 # TODO: your code here
+number1 = int(input("введите число "))  # Считываем вещественное число
+number2 = int(input("введите число "))  # Считываем вещественное число
+number3 = int(input("введите число "))  # Считываем вещественное число
+
+
+
+if number1==number2 or number2==number3 or number1==number3:
+    print("YES")
+else:
+    print("NO")
