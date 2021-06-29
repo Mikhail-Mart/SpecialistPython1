@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+price = float(input("введите цену: "))
+i = 1
+while i <= 20:
+    sum = price * i
+    print(i, sum, "rub")
+    i += 1
