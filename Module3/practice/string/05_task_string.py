@@ -6,3 +6,16 @@
 
 # TODO: your code here
 
+str = "И темен город. Мороз узором дорог не мети."
+
+str = str.lower()
+str = str.replace(" ","")
+str = str.replace(".","")
+str = str.replace(",","")
+
+str_reverce = str[::-1]
+
+if str == str_reverce:
+    print("строка перевертыш")
+else:
+    print("строка не перевертыш")
