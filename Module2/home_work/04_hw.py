@@ -14,3 +14,23 @@
 #    #
 #    #
 ######
+
+size = int(input("введите размер: "))
+i = 1
+while i <= size:
+    string = "#"
+    if i == 1 or i == size:
+        x = 1
+        while x < size:
+            string = string + "#"
+            x += 1
+        print(string)
+    else:
+        x = 1
+        while x >= 1 and x < size-1:
+            string = string + " "
+            #print(string, "x")
+            x += 1
+        string = string + "#"
+        print(string)
+    i += 1
