@@ -32,14 +32,45 @@ items = [
     },
 ]
 # Найдите:
-print("Товары на складе представлены брэндами: ")
-
+for item in items:
+    print(item["brand"], end=" ")
+print()
 # TODO: your code here
+lst = []
+for item in items:
+    lst.append(item["brand"])
 
+# print(lst)
+col = {}
+
+# print(lst.count("reebok"))
+for item in items:
+    col[item["brand"]] = lst.count(item["brand"])
+
+vsego = 0
+for item, sum in col.items():
+    # print(item,sum)
+    if sum > vsego:
+        vsego = sum
+
+# print(col)
 print("На складе больше всего товаров брэнда(ов): ")
+for item, sum in col.items():
+    if sum == vsego:
+        print(item, sum)
 
 # TODO: your code here
+price_max = 0
+for item in items:
+    if item.get("price") >  price_max:
+        price_max = item.get("price")
+
+#    print(item.get("brand"),item.get("price") )
+
 
 print("На складе самый дорогой товар брэнда(ов): ")
 
-# TODO: your code here
+for item in items:
+    if item.get("price") == price_max:
+        print(item.get("brand"))
+
