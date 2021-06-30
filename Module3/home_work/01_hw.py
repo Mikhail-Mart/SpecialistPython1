@@ -7,3 +7,11 @@ names = ["Иван", "Ирина", "Вячеслав", "Василий", "Пет
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
+
+str = ""
+ln = len(names)
+for name in names:
+    str += (name)
+    if  names[ln-1] != name:
+        str += ("," + " ")
+print(str)
