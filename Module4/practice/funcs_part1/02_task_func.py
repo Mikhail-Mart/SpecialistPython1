@@ -4,7 +4,11 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    temp = str(number)
+    if temp == temp[::-1]:
+        return (f"{number} является палиндромом")
+    else:
+        return (f"{number} не является палиндромом")
 
 
 # Тестируем функцию
